@@ -1,13 +1,7 @@
 import './style.css'
-import { setupCounter } from './counter.js'
+import { header } from './src/header/header'
 
 document.querySelector('#app').innerHTML = `
-  <div>
-    <h1>Hello, Home Map!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-  </div>
-`
+${header}
 
-setupCounter(document.querySelector('#counter'))
+`
