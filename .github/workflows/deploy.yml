@@ -47,3 +47,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+
+      - name: Add CNAME
+        run: echo "www.homemap.com.br" > ./dist/CNAME
